@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/bubble_sort.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Método Bubble Sort</h1>
+    </header>
+    <main>
+        <div class="burbuja-normal">
+            <img src="https://juncotic.com/wp-content/uploads/2016/09/thumbnail.png" alt="">
+            <p>El método burbuja es un algoritmo de ordenamiento simple y fácil de entender, aunque no es el más eficiente. Funciona comparando pares de elementos adyacentes en una lista y los intercambia si están en el orden incorrecto (por ejemplo, si el primero es mayor que el segundo en un orden ascendente). Este proceso se repite varias veces hasta que la lista queda completamente ordenada.
+
+                Características principales:
+                Iterativo: Hace múltiples pasadas sobre la lista.
+                Comparativo: Compara elementos adyacentes.
+                Intercambio: Realiza un "swap" si los elementos están fuera de orden.
+                In-place: No necesita espacio adicional significativo, ya que se realiza directamente sobre la lista.
+                Complejidad temporal:
+                Peor caso: 
+                𝑂
+                (
+                𝑛
+                2
+                )
+                O(n 
+                2
+                ), cuando la lista está completamente desordenada.
+                Mejor caso: 
+                𝑂
+                (
+                𝑛
+                )
+                O(n), cuando la lista ya está ordenada y se detecta en la primera iteración.</p>
+        </div>
+        <div class="burbuja-mejorada">
+            <p>El método burbuja mejorada es una optimización del método burbuja que intenta reducir el número de comparaciones innecesarias cuando la lista ya está parcialmente ordenada. La idea principal es usar una bandera (variable booleana) para detener el algoritmo si no se realizan intercambios durante una pasada, indicando que la lista ya está ordenada.
+                
+                Características principales:
+                Bandera para detección de orden: Si en una iteración completa no hay intercambios, el algoritmo termina.
+                Eficiencia mejorada: Reduce las iteraciones innecesarias en listas ya ordenadas o casi ordenadas.
+                Complejidad temporal:
+                Peor caso: Sigue siendo 
+                𝑂
+                (
+                𝑛
+                2
+                )
+                O(n 
+                2
+                ) cuando la lista está completamente desordenada.
+                Mejor caso: 
+                𝑂
+                (
+                𝑛
+                )
+                O(n), ya que detecta que la lista está ordenada en la primera iteración.</p>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiC7-AsbHTyBxcs5h4DUdmYSQg-Vqruy_1A1JDyg39hy-Tmbea4ONY50f86Ow4-XgTVb28-0MBcgik3Z4kZ3n4HLT0RVURGPjaTQtqoQSCoMc4tXrvajClIylLCADv0hk7rdSd8OpiS8rh7/w1200-h630-p-k-no-nu/metodo_de_la_burbuja+%25281%2529.png" alt="">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h3>Integrantes del equipo</h3>
+            <p>Christian Albrand</p>
+            <p>Samuel Dominguez</p>
+            <p>Esteban Torres</p>
+            <p>Alejandro Banderas</p>
+            <p>Alejandro Guzman</p>
+            <p>Adrian Hernandez</p>
+            <p>Alan Escarcega</p>
+        </div>
+    </footer>
+
+    <script src="./scripts/bubble_sort.js"></script>
 </body>
 </html>

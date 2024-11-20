@@ -1,0 +1,49 @@
+header{
+    text-align: center;
+    font-size: 32px;
+    font: arial;
+}
+
+body{
+    background-color: bisque;
+}
+
+.burbuja-normal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 20px;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+.burbuja-normal img{
+    width: 50%;
+    border: 10px solid #6e6e6e;
+    border-radius: 30px;
+    margin-left: 25%;
+}
+.burbuja-mejorada{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 20px;
+    text-align: justify;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.burbuja-mejorada img{
+    width: 50%;
+    border: 10px solid #6e6e6e;
+    border-radius: 30px;
+    margin-left: 25%;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: antiquewhite;
+    justify-content: center;
+    min-height: calc(10vh - 95px);
+}
