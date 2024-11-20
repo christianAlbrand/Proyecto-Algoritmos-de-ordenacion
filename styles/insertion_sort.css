@@ -1,0 +1,24 @@
+/* Header section */
+.header-container{
+    width: 100%;
+    background-color: rgb(175, 175, 175);
+}
+
+.header-container h1{
+    font-size: 2.0em;
+}
+.header-container div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Body section */
+body{
+    margin: 0;
+}
+/* Main section */
