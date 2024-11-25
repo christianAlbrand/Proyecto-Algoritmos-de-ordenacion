@@ -60,3 +60,7 @@ body{
     align-items: center;
     margin: 20px;
 }
+
+.bubble-sort-header{
+    margin-bottom: 25px;
+}
