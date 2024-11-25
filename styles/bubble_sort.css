@@ -34,3 +34,33 @@ body{
     border-radius: 30px;
     margin-left: 25%;
 }
+
+.animales-desordenados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.animales-desordenados img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn-config{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.bubble-sort-header{
+    margin-bottom: 25px;
+}

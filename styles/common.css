@@ -2,7 +2,8 @@ header{
     font-size: 32px;
     font: arial;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .page-container{
