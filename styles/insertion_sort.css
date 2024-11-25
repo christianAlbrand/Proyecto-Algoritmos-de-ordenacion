@@ -1,0 +1,34 @@
+.page-container .sortArray-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-container .sortArray{
+    font-size: 25px;
+}
+
+.page-container .sortArray input{
+    font-size: 20px;
+}
+
+.page-container .btn-container .btn{
+    background-color: lightgreen;
+    padding: 10px;
+    font-weight: bolder;
+    font-size:medium;
+}
+
+.page-container .btn-container{
+    margin-top: 10px;
+}
+
+.bar {
+    width: 30px;
+    display: inline-block;
+    margin: 0 2px;
+    background-color: lightblue;
+    height: 100px;
+    transition: height 0.2s ease;
+    position: relative; /* Necesario para posicionar el número */
+}

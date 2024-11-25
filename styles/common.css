@@ -22,3 +22,7 @@ a{
     background-color: antiquewhite;
     justify-content: center;
 }
+
+body{
+    margin: 0;
+}
