@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/insertion_sort.css">
     <title>Document</title>
+    
 </head>
 <body>
     <div class="page-container">
@@ -18,7 +19,16 @@
             </div>
         </header>
         <main>
-            <h1> prueb  </h1>
+            <div class="sortArray-container">
+                <div class="sortArray">
+                    <label for="arrayInputs">Ingresa valores desordenados separados por una coma</label>
+                    <input type="text" placeholder="Ejemplo: 7,12,2,87,3,1,0" id="arrayInputs">
+                </div>
+                <div id="container"></div>
+                <div class="btn-container">
+                    <button onclick="startSorting()" class="btn" id="sortButton">Ordenar Arreglo</button>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="footer">
@@ -33,5 +43,7 @@
             </div>
         </footer>
     </div>
+    <script src="./scripts/insertion_sort.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
