@@ -13,6 +13,7 @@ function insertionSort(){
         }
         array[j + 1] = current;
     }
+    resultStr += `${array}<br />`;
     document.getElementById("result").innerHTML = resultStr;
 }
 
