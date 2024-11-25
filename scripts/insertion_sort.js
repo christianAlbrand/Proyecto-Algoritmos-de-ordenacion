@@ -1,8 +1,7 @@
-array = [7,8,2,10,3,0]
-insertionSort(array)
-console.log(array)
-
-function insertionSort(array){
+function insertionSort(){
+    var array = document.getElementById("arrayInputs").value.split(",").map(Number);
+    var resultStr = `${array}<br />`;
+    document.getElementById("result").innerHTML = resultStr;
     for (let i = 1; i < array.length; i++) {
         let current = array[i];
 
@@ -10,9 +9,12 @@ function insertionSort(array){
         while(j >= 0 && array[j] > current){
             array[j+1] = array[j]
             j--;
+            resultStr += `${array}<br />`;
         }
         array[j + 1] = current;
     }
+    resultStr += `${array}<br />`;
+    document.getElementById("result").innerHTML = resultStr;
 }
 
 $(document).ready(function () {

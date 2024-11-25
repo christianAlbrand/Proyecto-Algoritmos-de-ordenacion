@@ -6,75 +6,83 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/bubble_sort.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="page-container">
-        <header>
-            <h1>Método Bubble Sort</h1>
-            <div>
-                <nav>
-                    <a href="./menu.html">menu</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="burbuja-normal">
-                <img src="https://juncotic.com/wp-content/uploads/2016/09/thumbnail.png" alt="">
-                <p>El método burbuja es un algoritmo de ordenamiento simple y fácil de entender, aunque no es el más eficiente. Funciona comparando pares de elementos adyacentes en una lista y los intercambia si están en el orden incorrecto (por ejemplo, si el primero es mayor que el segundo en un orden ascendente). Este proceso se repite varias veces hasta que la lista queda completamente ordenada.
-    
-                    Características principales:
-                    Iterativo: Hace múltiples pasadas sobre la lista.
-                    Comparativo: Compara elementos adyacentes.
-                    Intercambio: Realiza un "swap" si los elementos están fuera de orden.
-                    In-place: No necesita espacio adicional significativo, ya que se realiza directamente sobre la lista.
-                    Complejidad temporal:
-                    Peor caso: 
-                    𝑂
-                    (
-                    𝑛
-                    2
-                    )
-                    O(n 
-                    2
-                    ), cuando la lista está completamente desordenada.
-                    Mejor caso: 
-                    𝑂
-                    (
-                    𝑛
-                    )
-                    O(n), cuando la lista ya está ordenada y se detecta en la primera iteración.</p>
-            </div>
-            <div class="burbuja-mejorada">
-                <p>El método burbuja mejorada es una optimización del método burbuja que intenta reducir el número de comparaciones innecesarias cuando la lista ya está parcialmente ordenada. La idea principal es usar una bandera (variable booleana) para detener el algoritmo si no se realizan intercambios durante una pasada, indicando que la lista ya está ordenada.
-                    
-                    Características principales:
-                    Bandera para detección de orden: Si en una iteración completa no hay intercambios, el algoritmo termina.
-                    Eficiencia mejorada: Reduce las iteraciones innecesarias en listas ya ordenadas o casi ordenadas.
-                    Complejidad temporal:
-                    Peor caso: Sigue siendo 
-                    𝑂(𝑛2) 
-                    cuando la lista está completamente desordenada.
-                    
-                    Mejor caso: 𝑂(𝑛)
-                    ya que detecta que la lista está ordenada en la primera iteración.</p>
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiC7-AsbHTyBxcs5h4DUdmYSQg-Vqruy_1A1JDyg39hy-Tmbea4ONY50f86Ow4-XgTVb28-0MBcgik3Z4kZ3n4HLT0RVURGPjaTQtqoQSCoMc4tXrvajClIylLCADv0hk7rdSd8OpiS8rh7/w1200-h630-p-k-no-nu/metodo_de_la_burbuja+%25281%2529.png" alt="">
-            </div>
-        </main>
-    
-        <footer>
-            <div class="footer">
-                <h3>Integrantes del equipo</h3>
-                <p>Christian Albrand</p>
-                <p>Samuel Dominguez</p>
-                <p>Esteban Torres</p>
-                <p>Alejandro Banderas</p>
-                <p>Alejandro Guzman</p>
-                <p>Adrian Hernandez</p>
-                <p>Alan Escarcega</p>
-            </div>
-        </footer>
-    
-        <script src="./scripts/bubble_sort.js"></script>
-    </div>
+    <header class="bubble-sort-header">
+        <h1>Método Bubble Sort</h1>
+        <div>
+            <nav>
+                <a href="./menu.html">menu</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="burbuja-normal">
+            <img src="https://juncotic.com/wp-content/uploads/2016/09/thumbnail.png" alt="">
+            <p>El método burbuja es un algoritmo de ordenamiento simple y fácil de entender, aunque no es el más eficiente. Funciona comparando pares de elementos adyacentes en una lista y los intercambia si están en el orden incorrecto (por ejemplo, si el primero es mayor que el segundo en un orden ascendente). Este proceso se repite varias veces hasta que la lista queda completamente ordenada.
+
+                Características principales:
+                Iterativo: Hace múltiples pasadas sobre la lista.
+                Comparativo: Compara elementos adyacentes.
+                Intercambio: Realiza un "swap" si los elementos están fuera de orden.
+                In-place: No necesita espacio adicional significativo, ya que se realiza directamente sobre la lista.
+                Complejidad temporal:
+                Peor caso: 
+                𝑂(𝑛2)
+                O(n2), cuando la lista está completamente desordenada.
+                Mejor caso: 
+                𝑂(𝑛)
+                O(n), cuando la lista ya está ordenada y se detecta en la primera iteración.</p>
+        </div>
+        <div class="burbuja-mejorada">
+            <p>El método burbuja mejorada es una optimización del método burbuja que intenta reducir el número de comparaciones innecesarias cuando la lista ya está parcialmente ordenada. La idea principal es usar una bandera (variable booleana) para detener el algoritmo si no se realizan intercambios durante una pasada, indicando que la lista ya está ordenada.
+                
+                Características principales:
+                Bandera para detección de orden: Si en una iteración completa no hay intercambios, el algoritmo termina.
+                Eficiencia mejorada: Reduce las iteraciones innecesarias en listas ya ordenadas o casi ordenadas.
+                Complejidad temporal:
+                Peor caso: Sigue siendo 𝑂(𝑛2)
+                O(n2) cuando la lista está completamente desordenada.
+                Mejor caso: 
+                𝑂(𝑛)
+                O(n), ya que detecta que la lista está ordenada en la primera iteración.</p>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiC7-AsbHTyBxcs5h4DUdmYSQg-Vqruy_1A1JDyg39hy-Tmbea4ONY50f86Ow4-XgTVb28-0MBcgik3Z4kZ3n4HLT0RVURGPjaTQtqoQSCoMc4tXrvajClIylLCADv0hk7rdSd8OpiS8rh7/w1200-h630-p-k-no-nu/metodo_de_la_burbuja+%25281%2529.png" alt="">
+        </div>
+        <div class="animales-desordenados" id="animales">
+            <img src="./Imagenes_de_Proyecto/Elefante_9.png" alt="Animal 9" data-order="9">
+            <img src="./Imagenes_de_Proyecto/Perro_4.png" alt="Animal 4" data-order="4">
+            <img src="./Imagenes_de_Proyecto/Gorila_7.png" alt="Animal 7" data-order="7">
+            <img src="./Imagenes_de_Proyecto/Jirafa_10.png" alt="Animal 10" data-order="10">
+            <img src="./Imagenes_de_Proyecto/Conejo_2.png" alt="Animal 2" data-order="2">
+            <img src="./Imagenes_de_Proyecto/Caballo_8.png" alt="Animal 8" data-order="8">
+            <img src="./Imagenes_de_Proyecto/Hamster_1.png" alt="Animal 1" data-order="1">
+            <img src="./Imagenes_de_Proyecto/Lobo_5.png" alt="Animal 5" data-order="5">
+            <img src="./Imagenes_de_Proyecto/Leon_6.png" alt="Animal 6" data-order="6">
+            <img src="./Imagenes_de_Proyecto/Gato_3.png" alt="Animal 3" data-order="3">
+        </div>
+        <div class="btn-config">
+            <button class="btn btn-primary btn-lg" id="ordenar-btn">Organizar por método de Burbuja</button>
+        </div>
+        <div class="btn-config">
+            <button class="btn btn-outline-primary btn-lg">Organizar por método de Burbuja Mejorada</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h3>Integrantes del equipo</h3>
+            <p>Christian Albrand</p>
+            <p>Samuel Dominguez</p>
+            <p>Esteban Torres</p>
+            <p>Alejandro Banderas</p>
+            <p>Alejandro Guzman</p>
+            <p>Adrian Hernandez</p>
+            <p>Alan Escarcega</p>
+        </div>
+    </footer>
+
+    <script src="./scripts/bubble_sort.js"></script>
 </body>
 </html>
