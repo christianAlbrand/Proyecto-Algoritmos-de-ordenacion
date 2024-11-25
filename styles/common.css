@@ -1,0 +1,24 @@
+header{
+    font-size: 32px;
+    font: arial;
+    display: flex;
+    justify-content: center;
+}
+
+.page-container{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+a{
+    text-decoration: underline;
+    color: black;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: antiquewhite;
+    justify-content: center;
+}
