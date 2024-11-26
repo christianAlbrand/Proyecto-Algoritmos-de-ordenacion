@@ -1,26 +1,24 @@
-.page-container .sortArray-container{
+.page-container {
+  .sortArray-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.page-container .sortArray{
-    font-size: 25px;
-}
-
-.page-container .sortArray input{
-    font-size: 20px;
-}
-
-.page-container .btn-container .btn{
-    background-color: lightgreen;
-    padding: 10px;
-    font-weight: bolder;
-    font-size:medium;
-}
-
-.page-container .btn-container{
-    margin-top: 10px;
+    .sortArray{
+        font-size: 25px;
+        input{
+            font-size: 20px;
+        }
+    }
+    .btn-container{
+        margin-top: 10px;
+        .btn{
+            background-color: lightgreen;
+            padding: 10px;
+            font-weight: bolder;
+            font-size:medium;
+            }
+        }
+    }
 }
 
 .bar {
@@ -41,13 +39,12 @@
     max-width: 100vw;
     box-sizing: border-box;
     padding: 10px;
-}
-
-.animales-desordenados img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
 }
 
 .insertion-header{
