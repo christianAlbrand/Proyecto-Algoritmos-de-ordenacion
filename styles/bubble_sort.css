@@ -12,6 +12,10 @@ body{
     justify-content: space-between;
 }
 
+.burbuja-normal p{
+    margin: 50px;
+}
+
 .burbuja-normal img{
     width: 50%;
     border: 10px solid #6e6e6e;
@@ -26,6 +30,10 @@ body{
     text-align: justify;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+.burbuja-mejorada p{
+    margin: 50px;
 }
 
 .burbuja-mejorada img{

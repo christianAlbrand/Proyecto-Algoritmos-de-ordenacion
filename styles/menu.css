@@ -20,4 +20,33 @@ a{
 
 body{
     margin: 0;
+    background-color: bisque;
+}
+
+a :hover{
+    transform: scale(2);
+    color: yellow;
+    text-decoration: underline;
+}
+
+.algoritmos-ordenacion{
+    display: flex;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.algoritmos-ordenacion p{
+    font-size: 30px;
+}
+
+.algoritmos-ordenacion img{
+    max-width: 25%; !important
+}
+
+main{
+    display: flex;
+    text-align: center;
 }
