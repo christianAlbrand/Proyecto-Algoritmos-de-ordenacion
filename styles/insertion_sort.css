@@ -53,3 +53,18 @@
 .insertion-header{
     margin-bottom: 25px;
 }
+
+.btn-config{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.insercion-texto{
+    font-size: 20px;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 100px;
+}
