@@ -1,4 +1,3 @@
-
 body{
     background-color: bisque;
 }
@@ -10,18 +9,17 @@ body{
     font-size: 20px;
     text-align: justify;
     justify-content: space-between;
+    p{
+        margin: 50px;
+    }
+    img{
+        width: 50%;
+        border: 10px solid #6e6e6e;
+        border-radius: 30px;
+        margin-left: 25%;
+    }
 }
 
-.burbuja-normal p{
-    margin: 50px;
-}
-
-.burbuja-normal img{
-    width: 50%;
-    border: 10px solid #6e6e6e;
-    border-radius: 30px;
-    margin-left: 25%;
-}
 .burbuja-mejorada{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,17 +28,15 @@ body{
     text-align: justify;
     justify-content: space-between;
     margin-top: 20px;
-}
-
-.burbuja-mejorada p{
-    margin: 50px;
-}
-
-.burbuja-mejorada img{
-    width: 50%;
-    border: 10px solid #6e6e6e;
-    border-radius: 30px;
-    margin-left: 25%;
+    p{
+        margin: 50px;
+    }
+    img{
+        width: 50%;
+        border: 10px solid #6e6e6e;
+        border-radius: 30px;
+        margin-left: 25%;
+    }
 }
 
 .animales-desordenados {
@@ -51,14 +47,13 @@ body{
     max-width: 100vw;
     box-sizing: border-box;
     padding: 10px;
-}
-
-.animales-desordenados img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.5s ease-in-out;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.5s ease-in-out;
+    }
 }
 
 .btn-config{

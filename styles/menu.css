@@ -2,10 +2,9 @@
 .header-container{
     width: 100%;
     background-color: rgb(175, 175, 175);
-}
-
-.header-container h1{
-    font-size: 2.0em;
+    h1 {
+        font-size: 2.0em;
+    }
 }
 
 nav{
@@ -36,14 +35,12 @@ a :hover{
     margin-right: 100px;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-}
-
-.algoritmos-ordenacion p{
-    font-size: 30px;
-}
-
-.algoritmos-ordenacion img{
-    max-width: 25%; !important
+    p {
+        font-size: 30px;
+    }
+    img {
+        max-width: 25%; /* <-- important */
+    }
 }
 
 main{
