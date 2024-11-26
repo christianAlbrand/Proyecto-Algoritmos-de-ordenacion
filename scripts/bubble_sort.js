@@ -1,4 +1,4 @@
-document.getElementById("ordenar-btn").addEventListener("click", function () {
+document.getElementById("ordenar-normal-btn").addEventListener("click", function () {
     const contenedor = document.getElementById("animales");
     const imagenes = Array.from(contenedor.children);
 
