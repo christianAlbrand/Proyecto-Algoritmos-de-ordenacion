@@ -7,6 +7,10 @@
     }
 }
 
+main{
+    background-color: white;
+}
+
 nav{
     display: flex;
     justify-content: space-around;

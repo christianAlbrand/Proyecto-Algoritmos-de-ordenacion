@@ -1,5 +1,5 @@
-body{
-    background-color: bisque;
+main{
+    background-color: rgb(188, 219, 231);
 }
 
 .burbuja-normal{
@@ -61,9 +61,8 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 20px;
 }
 
 .bubble-sort-header{
-    margin-bottom: 25px;
+    background-color: rgb(140, 208, 235);
 }
