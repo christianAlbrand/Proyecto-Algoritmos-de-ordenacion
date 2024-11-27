@@ -1,7 +1,7 @@
 /* Header section */
 .header-container{
     width: 100%;
-    background-color: rgb(175, 175, 175);
+    background-color: #0a0a23;
     h1 {
         font-size: 2.0em;
     }
@@ -14,12 +14,12 @@ nav{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 body{
     margin: 0;
-    background-color: bisque;
+    background-color: white;
 }
 
 a :hover{
@@ -46,4 +46,20 @@ a :hover{
 main{
     display: flex;
     text-align: center;
+}
+
+.list-container{
+    text-align: left;
+    font-weight: 500;
+    font-size: 23px;
+    
+}
+
+li{
+    margin-bottom: 15px;
+}
+
+.list-section{
+    text-align: left;
+    margin-left: 25px;
 }
