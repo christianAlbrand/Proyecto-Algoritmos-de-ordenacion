@@ -28,7 +28,7 @@
     background-color: lightblue;
     height: 100px;
     transition: height 0.2s ease;
-    position: relative; /* Necesario para posicionar el número */
+    position: relative;
 }
 
 .animales-desordenados {
@@ -49,6 +49,8 @@
 
 .insertion-header{
     margin-bottom: 25px;
+    background-color: #0a0a23;
+    color: white;
 }
 
 .btn-config{

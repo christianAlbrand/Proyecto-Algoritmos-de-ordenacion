@@ -1,5 +1,5 @@
 main{
-    background-color: rgb(188, 219, 231);
+    background-color: white;
 }
 
 .burbuja-normal{
@@ -64,5 +64,6 @@ main{
 }
 
 .bubble-sort-header{
-    background-color: rgb(140, 208, 235);
+    background-color: #0a0a23;
+    color: white;
 }
