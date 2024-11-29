@@ -28,18 +28,59 @@
                         alt="">
                 </div>
             </div>
-            <div class="list-section">
-                <h2>Tipos más comunes de algoritmos de ordenación</h1>
-                    <ul class="list-container">
-                        <li>Selection sort (selección)</li>
-                        <li>Bubble sort (burbuja)</li>
-                        <li>Merge sort (combinación)</li>
-                        <li>Quick sort (rápida)</li>
-                        <li>Heap sort (montón)</li>
-                        <li>Counting sort (conteo)</li>
-                        <li>Radix sort (raíz)</li>
-                        <li>Bucket sort (cubo)</li>
-                    </ul>
+            <div>
+                <table>
+                    <tr>
+                        <th>Algoritmo</th>
+                        <th>Descripción</th>
+                        <th>Complejidad Temporal</th>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Selection Sort</td>
+                        <td>Selecciona el elemento más pequeño y lo coloca en su posición final en cada iteración.</td>
+                        <td>O(n²)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Bubble Sort</td>
+                        <td>Compara pares de elementos adyacentes e intercambia si están en el orden incorrecto.</td>
+                        <td>O(n²)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Burbuja Mejorada</td>
+                        <td>Optimización del Bubble Sort que detiene el proceso si no hay intercambios en una pasada.</td>
+                        <td>O(n²) (mejor caso: O(n))</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Merge Sort</td>
+                        <td>Divide el array en mitades, las ordena recursivamente y luego las combina.</td>
+                        <td>O(n log n)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Quick Sort</td>
+                        <td>Selecciona un pivote, organiza elementos menores y mayores alrededor de él.</td>
+                        <td>O(n log n) (peor caso: O(n²))</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Heap Sort</td>
+                        <td>Usa un árbol binario para organizar los datos en un heap y ordenarlos.</td>
+                        <td>O(n log n)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Counting Sort</td>
+                        <td>Cuenta la cantidad de elementos en cada rango para ordenar rápidamente números pequeños.</td>
+                        <td>O(n + k)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Radix Sort</td>
+                        <td>Ordena números por sus dígitos, procesándolos de menor a mayor significancia.</td>
+                        <td>O(nk)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Bucket Sort</td>
+                        <td>Divide los elementos en varios "cubos" y luego los ordena individualmente.</td>
+                        <td>O(n + k)</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </main>
