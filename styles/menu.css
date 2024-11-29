@@ -47,6 +47,10 @@ a :hover{
     }
 }
 
+.section-2{
+    display: flex;
+}
+
 main{
     display: flex;
     text-align: center;

@@ -45,52 +45,48 @@ $(document).ready(function () {
 
 document.getElementById("ordenar-btn").addEventListener("click", function () {
     const contenedor = document.getElementById("animales");
-    const imagenes = Array.from(contenedor.children);
-    let i = 1; // Iniciar desde el segundo elemento
-    let interval;
+    let imagenes = Array.from(contenedor.children);
+    let i = 1; // Empezamos desde el segundo elemento
 
     function startSorting() {
-        interval = setInterval(() => {
-            if (i >= imagenes.length) {
-                clearInterval(interval); // Finalizar cuando todas estén ordenadas
-                return;
-            }
+        if (i >= imagenes.length) {
+            console.log("Ordenamiento completo");
+            return; // Finalizamos cuando llegamos al final del arreglo
+        }
 
-            let j = i;
-            const current = imagenes[j];
+        let j = i;
+        const current = imagenes[j];
 
-            // Mover el elemento a su posición correcta
-            function insert() {
-                if (j > 0) {
-                    const actual = parseInt(current.getAttribute("data-order"));
-                    const anterior = parseInt(imagenes[j - 1].getAttribute("data-order"));
+        // Función para insertar el elemento en la posición correcta
+        function insert() {
+            if (j > 0) {
+                const actual = parseInt(current.getAttribute("data-order"));
+                const anterior = parseInt(imagenes[j - 1].getAttribute("data-order"));
 
-                    if (actual < anterior) {
-                        animateMove(current, imagenes[j - 1], () => {
-                            // Realizar el intercambio en el DOM
-                            contenedor.insertBefore(current, imagenes[j - 1]);
+                if (actual < anterior) {
+                    animateMove(current, imagenes[j - 1], () => {
+                        // Insertar en el DOM
+                        contenedor.insertBefore(current, imagenes[j - 1]);
 
-                            // Actualizar el array
-                            const temp = imagenes[j - 1];
-                            imagenes[j - 1] = current;
-                            imagenes[j] = temp;
+                        // Actualizar el array
+                        imagenes = Array.from(contenedor.children);
 
-                            j--;
-                            insert(); // Continuar moviendo hacia atrás
-                        });
-                        return;
-                    }
+                        j--; // Seguimos moviendo hacia atrás
+                        insert();
+                    });
+                    return;
                 }
-
-                // Pasar al siguiente elemento en el ordenamiento
-                i++;
             }
 
-            insert(); // Comenzar a mover el elemento actual
-        }, 1500); // Tiempo entre cada iteración principal
+            // Continuamos con el siguiente elemento
+            i++;
+            startSorting(); // Llamamos nuevamente para procesar el siguiente elemento
+        }
+
+        insert(); // Iniciamos la inserción del elemento actual
     }
 
-    // Animación para mover un elemento con un trayecto de bajada, desplazamiento, y subida
+    // Animación para mover un elemento
     function animateMove(image1, image2, callback) {
         const rect1 = image1.getBoundingClientRect();
         const rect2 = image2.getBoundingClientRect();
@@ -139,3 +135,4 @@ document.getElementById("ordenar-btn").addEventListener("click", function () {
 
     startSorting(); // Iniciar el ordenamiento
 });
+
