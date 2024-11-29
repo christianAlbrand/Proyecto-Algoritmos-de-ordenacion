@@ -60,25 +60,29 @@ main{
     text-align: left;
     font-weight: 500;
     font-size: 23px;
-    border: 1px solid black;
-    margin-right: 130px;
-    
 }
 
 li{
     margin-bottom: 15px;
 }
 
-.list-section{
-    text-align: left;
-    margin-left: 25px;
-}
 
-.important-section{
-    width: 50%;
-    padding-top: 80px;
-}
 
-.important-section p{
-    font-size: 25px;
+/*Tabla*/
+table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid #ddd;
+    justify-content: center;
+    margin: 100px;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #0a0a23;
+    color: white;
+    font-weight: bold;
 }
